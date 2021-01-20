@@ -6,9 +6,40 @@
 
 html {
     background-color: #fff;
-    color: rgb((107, 107, 107)224, 155, 155);
+    color: rgb(119, 109, 109));
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility; 
 }
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.473),rgba(0, 0, 0, 0.705)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h1{
+    margin: 0;
+    color:rgb(194, 182, 182);
+    font-size: 270%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px
+
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform : translate(-50%, -50%);
+}
+
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto; /*top and bottom will be 0 and left and right will be*/
+}
+
