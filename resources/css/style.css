@@ -26,21 +26,85 @@ html {
 /* REUSABLE COMPONENTS */
 /*-------------------------------------------------*/
 
-h1{
-    margin: 0;
-    margin-bottom: 20px;
-    color:rgb(194, 182, 182);
-    font-size: 270%;
-    font-weight: 300;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 3px
-}
-
 .row{
     max-width: 1140px;
     margin: 0 auto; /*top and bottom will be 0 and left and right will be*/
 }
+
+section {
+    padding: 80px 0;
+}
+
+.box{
+    padding: 1%
+}
+
+
+/* ----- HEADINGS -----*/
+
+
+h1, 
+h2,
+h3 {
+    font-weight: 300; /*Thickness*/
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    color:rgb(194, 182, 182);
+    font-size: 270%;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 13px;
+}
+
+h2:after /*psuedo class  to display content with css*/ {
+    display: block;
+    height: 2px;
+    background-color: #f39c12;
+    content: ""; /*MUST SPECIFY CONTENT WHEN USING AFTER*/
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*----- PARAGRAPHS -----*/
+.long-copy {
+    line-height: 145%;
+    width : 70%; /*will no longer be centered*/
+    margin-left: 15%; /*15% because the total will be 100% (left and right)*/
+    text-align: center;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/*----- ICONS -----*/
+.icon-big { 
+    /*icons act like fonts*/
+    font-size: 400%;
+    display: block; /*display as a block so that it forces a line break*/
+    color: #f39c12;
+}
+
+
+
 
 /*----- BUTTONS -----*/
 .btn:link,

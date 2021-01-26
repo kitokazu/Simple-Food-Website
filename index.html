@@ -10,10 +10,16 @@
     </head>
     <body>
         <header>
+            <!--Header has navigation bar and title-->
+            <!--nav for navigation bar-->
             <nav>
                 <div class="row">
                     <img src="resources/img/logo-white.png" alt="Omnifood logo" class="logo">
+                    <!--Unordered list-->
                     <ul class="main-nav">
+                        <!--li is list item-->
+                        <!--a defines a hyperlink-->
+                        <!--use # for temporary link-->
                         <li><a href="#">Food delivery</a></li>
                         <li><a href="#">How it works</a></li>
                         <li><a href="#">Our cities</a></li>
@@ -26,6 +32,54 @@
                 <a class="btn btn-full" href="#">I'm hungry</a>
                 <a class="btn btn-ghost" href="#">Show me more!</a>
         </header>
+        <!--Sections-->
+        <section class="section-features">
+            <!---We want the row to be straight so we have class row-->
+            <div class="row">
+                <!--Typically only want one h1 element throughout the code-->
+                <!--mdash is from html entities-->
+                <h2>Get food fast &mdash; not fast food</h2>
+                <!--p for paragraph-->
+                <p class="long-copy">
+                    Food service (US English) or catering industry (British English) defines those businesses, institutions, and companies responsible for any meal prepared outside the home.
+                </p>
+            </div>
+            <!--starting a new row to utilize grid-->
+            <div class="row">
+                <!---in col and span1-of-4 class from grid.css-->
+                <div class="col span-1-of-4 box"> <!--this is from grid.css-->
+                    <ion-icon name="calendar" class="icon-big"></ion-icon>
+                    <h3>Up to 365 days/year</h3>
+                    <p>
+                        Never cook again! We really mean this. Our subscription plan include plans include up to 365 days/year coverage.
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box"> <!--this is from grid.css-->
+                    <ion-icon name="pizza" class="icon-big"></ion-icon>
+                    <h3>Best food ever</h3>
+                    <p>
+                        text for paragraph number 2
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box" > <!--this is from grid.css-->
+                    <ion-icon name="play-forward" class="icon-big"></ion-icon>
+                    <h3>fastest service in town</h3>
+                    <p>
+                        text for paragraph number 3
+                    </p>
+                </div>
+                <div class="col span-1-of-4 box"> <!--this is from grid.css-->
+                    <ion-icon name="walk" class="icon-big"></ion-icon>
+                    <h3>organic and healthy</h3>
+                    <p>
+                        text for paragraph 4 
+                    </p>
+                </div>
+            </div>
+            
+        </section>
 
+        <!--Using this for ionicons-->
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     </body>
 </html>
